@@ -1,4 +1,4 @@
-package IO;
+package IO.T2;
 
 import java.io.IOException;
 
