@@ -13,9 +13,9 @@ public class MainTest {
     @Test
     public void parse1() throws Exception {
         String input = "Мама мыла-мыла-мыла раму!";
-        String expected = "мыла\n" +
-                "мама\n" +
-                "раму\n";
+        String expected = "мыла\r\n" +
+                "мама\r\n" +
+                "раму\r\n";
         // compare an expected output to the actual output
         Assert.assertEquals(expected, doTest(input));
     }
@@ -27,16 +27,16 @@ public class MainTest {
                 "efficitur. Vestibulum eget metus imperdiet sapien laoreet faucibus. " +
                 "Nunc eget vehicula mauris, ac auctor lorem. Lorem ipsum dolor sit amet, " +
                 "consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim.";
-        String expected = "consectetur\n" +
-                "faucibus\n" +
-                "ipsum\n" +
-                "lorem\n" +
-                "adipiscing\n" +
-                "amet\n" +
-                "dolor\n" +
-                "eget\n" +
-                "elit\n" +
-                "mi\n";
+        String expected = "consectetur\r\n" +
+                "faucibus\r\n" +
+                "ipsum\r\n" +
+                "lorem\r\n" +
+                "adipiscing\r\n" +
+                "amet\r\n" +
+                "dolor\r\n" +
+                "eget\r\n" +
+                "elit\r\n" +
+                "mi\r\n";
         // compare an expected output to the actual output
         Assert.assertEquals(expected, doTest(input));
     }
